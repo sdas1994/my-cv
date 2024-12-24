@@ -1,0 +1,81 @@
+% Awesome Source CV LaTeX Template
+%
+% This template has been downloaded from:
+% https://github.com/darwiin/awesome-neue-latex-cv
+%
+% Author:
+% Christophe Roger
+%
+% Template license:
+% CC BY-SA 4.0 (https://creativecommons.org/licenses/by-sa/4.0/)
+
+%Section: Work Experience at the top
+\sectionTitle{Work Experience}{\faSuitcase}
+%\renewcommand{\labelitemi}{$\bullet$}
+\begin{experiences}
+  \experience
+    {Current}       {Project: AskAVA | Lead Engineer, Product Owner}{Arista Networks}{Feb 22 to present}
+    {February 2024} {
+                      \begin{itemize}
+                        \item Designed an LLM based chat interface for network security analysts to interact with all resources
+                        \item Employed reasoning capabilities of LLMs to decide correct function calling approaches, given a prompt
+                        \item Implemented RAG approaches over documentation to supercharge reasoning ability of LLMs
+                        \item Experimented with different vector stores for document chunk embeddings, evaluating on performance
+                        \item Utilized LlamaIndex as a framework to abstract ingestion, storing, querying and evaluation
+                      \end{itemize}
+                    }
+                    {OpenAI,Gemini,LLM,Vertex AI,Milvus,FAISS,LlamaIndex,Docker,VS Code}
+  \emptySeparator
+  \experience
+    {December 2023} {Project: IoC++ | Lead Engineer, Product Owner}{Arista Networks}{Feb 22 to present}
+    {January 2024}  {
+                      \begin{itemize}
+                        \item Designed an interactive platform to enable threat researchers gain an holistic view on IoCs
+                        \item Employed multithreading and asynchronous approaches in Python to populate data in an efficient manner
+                        \item Created a Postgres database to store pulled data, and a schema for efficient updation and retrieval
+                        \item Built FastAPI endpoints for accessing said data, and a Streamlit frontend to run custom queries
+                      \end{itemize}
+                    }
+                    {FastAPI,Python,OpenAPI,Postgres,Multithreading,AsyncIO,cron,Streamlit}
+  \emptySeparator
+  \experience
+    {March 2022}    {Project: DeviceAVA | Lead Engineer, Product Owner}{Arista Networks}{Feb 22 to present}
+    {November 2023} {
+                      \begin{itemize}
+                        \item Designed a system of gRPC microservices in Python, responsible for device fingerprinting 
+                        \item Asynchronous integration with third party APIs, using multithreading, to maximize performance
+                        \item Designed a novel schema to populate local signatures, based on regexes and Jinja templates
+                        \item Dockerized the build process, used Terraform to programatically control deployment of container on AWS
+                        \item Highly scalable, handles a million concurrent requests with consistent 99.99th percentile latency
+                        \item Built metrics pipeline and dashboard on Prometheus and Grafana, and ran analytics on activity data
+                        \item Led a team of two to develop data pipelines on GPDB, orchestrated by Apache Airflow using Scala
+                        \item Supervised building of a database of devices with auxilliary information. Created an endpoint to match string query to closest matching database entry using string similarity and semantic embedding
+                      \end{itemize}
+                    }
+                    {gRPC,Python,Hyperscan,Jinja,Docker,AWS Fargate,ALB,Terraform,Airflow,GPDB,Prometheus,Grafana}
+  \emptySeparator
+  \experience
+    {December 2019} {Project: Catalog Recommendation | Data Scientist II}{Meesho}{Dec 19 to Feb 22}
+    {February 2022} {
+                      \begin{itemize}
+                        \item Modeled a collaborative filtering based recommender engine using ALS method for Matrix Factorization
+                        \item Implemented strategies to manage catalog views in context aware manner to boost serendipity
+                        \item Performed offline benchmarking on metrics like nDCG, followed by A/B testing on significant users
+                        \item Implemented DropoutNet architecture over the MF model to tackle cold-start problem, using Tensorflow
+                        \item Developed Airflow maintained Apache Spark jobs for data ingestion, and Redis cache, for backend service
+                        \item Personalized item feed led to improved KPI for the affected real estate, views/session grew by upto ~17\%
+                      \end{itemize}
+                    }
+                    {Recommendation System,DropoutNet,Collaborative Filtering,Apache Spark,Airflow,Tensorflow,Redis}
+  \emptySeparator
+  \experience
+  {October 2018}  {Project: DCO | MTS Software Developer I/II}{Adobe Inc.}{July 17 to Dec 19}
+  {December 2019} {
+                    \begin{itemize}
+                      \item Modeled the problem of Dynamic Creative Optimization as a Contextual Multi-armed Bandit Problem to progressively model user affinity towards different ad creatives
+                      \item Devised a novel approach by incorporating Field-aware Factorization Machines into the ε-greedy framework, to handle advertising data with 99\% sparsity and 99.9\% class imbalance.
+                      \item Developed data pipelines for effectively data cleaning, merging and feature engineering in Apache Spark
+                    \end{itemize}
+                  }
+                  {Factorization Machines,Reinforcement Learning,Dynamic Creative Optimization,Apache Spark,Multi-armed Bandit}
+\end{experiences}
